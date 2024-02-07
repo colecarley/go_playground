@@ -1,3 +1,3 @@
-module new-project
+module huffman
 
 go 1.21.1
