@@ -33,7 +33,6 @@ func decompress(filename string) {
     var serializedTree = data[1:lenTree + 1]
     var tree = node.Deserialize(serializedTree)
 
-    // tree.PrintTree();
     tree.Decompress(data[lenTree + 1:])
 }
 
@@ -46,7 +45,6 @@ func compress(filename string) {
     } 
 
     var freq = getFrequency(data)
-
 
     heap := heap.Heap{};
 
